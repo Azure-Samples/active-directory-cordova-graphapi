@@ -455,11 +455,14 @@
         function authenticate() {
             var promise = PromiseFactory.createPromise();
 
-            logOut(appId).then(function() {
-                authContext.acquireTokenAsync(resourceUrl, appId, redirectUrl).then(function(token) {
+            logOut().then(function () {
+                authContext.acquireTokenSilentAsync(resourceUrl, appId, null).then(function(token) {
                     promise.resolve(token);
-                },
-                onError.bind(promise));
+                }, function() {
+                    authContext.acquireTokenAsync(resourceUrl, appId, redirectUrl).then(function(token) {
+                        promise.resolve(token);
+                    }, onError.bind(promise));
+                });
             }, onError.bind(promise));
 
             return promise;
