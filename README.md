@@ -103,7 +103,7 @@ You can workaround this issue by using patched cordova-windows with MSBuild reve
 * `cd AADGraphSample`
 * `cordova platform add ..\cordova-windows`
 
-### Step 6:  Add dependant plugins to your cordova app
+### Step 6:  Add required plugins to your cordova app
 * `cordova plugin add ../azure-activedirectory-cordova-plugin-graph`
 * `cordova plugin add cordova-plugin-device`
 * `cordova plugin add cordova-plugin-console`
