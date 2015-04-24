@@ -104,10 +104,10 @@ You can workaround this issue by using patched cordova-windows with MSBuild reve
 * `cordova platform add ..\cordova-windows`
 
 ### Step 6:  Add dependant plugins to your cordova app
-  `cordova plugin add ../azure-activedirectory-cordova-plugin-graph`
-  `cordova plugin add cordova-plugin-device`
-  `cordova plugin add cordova-plugin-console`
-  `cordova plugin add com.ionic.keyboard`
+* `cordova plugin add ../azure-activedirectory-cordova-plugin-graph`
+* `cordova plugin add cordova-plugin-device`
+* `cordova plugin add cordova-plugin-console`
+* `cordova plugin add com.ionic.keyboard`
 
 ### Step 7:  Configure the sample to use your Azure Active Directory tenant
  1. Open the `app.js` file inside created `AADGraphSample/www/js/` folder.
