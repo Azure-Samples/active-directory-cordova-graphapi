@@ -12,6 +12,8 @@ If you would like to get started immediately, skip this section and jump to How 
 This sample demonstrates a simple application, which allows a user to retrieve and manage directory users, groups and applications. Available actions include CRUD and some specific operations like Reset user password and Restore deleted application.
 Supported platforms: iOS, Android, Windows Store and Windows Phone.
 
+__NOTE:__ You should login as a Global Administrator in order to all sample functionality to work; you may get "Insufficient privileges" error otherwise.
+
 ## How To Run This Sample
 
 ### Prerequisites
