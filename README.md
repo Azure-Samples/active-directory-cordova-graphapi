@@ -1,3 +1,9 @@
+---
+services:
+platforms:
+author: azure
+---
+
 # NativeClient-GraphAPI-Cordova
 
 This sample demonstrates the usage of the AAD Graph plugin for [Apache Cordova](https://cordova.apache.org/) to build an Apache Cordova app for managing an Azure Active Directory via [AAD Graph API](https://msdn.microsoft.com/en-us/library/azure/hh974476.aspx).
