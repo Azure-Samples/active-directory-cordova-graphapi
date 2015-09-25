@@ -1,7 +1,7 @@
 ---
-services:
-platforms:
-author: azure
+services: active-directory
+platforms: ios, android
+author: dstrockis
 ---
 
 # Calling the Graph API in an Apache Cordova app
@@ -11,7 +11,7 @@ This sample demonstrates the usage of the AAD Graph plugin for [Apache Cordova](
 This sample solution demonstrates the usage of the AAD Graph plugin for [Apache Cordova](https://cordova.apache.org/) to build an Apache Cordova app, targeting several different platforms with a single code base. The application signs users in with Azure Active Directory (AAD), using the Active Directory Authentication Library (ADAL) plugin for Cordova to obtain a JWT access token through the OAuth 2.0 protocol. The access token is sent to AAD's Graph API to authenticate the user and obtain information about users, groups and applications.
 For more information about how the protocols work in this scenario and other scenarios, see [Authentication Scenarios for Azure AD](http://go.microsoft.com/fwlink/?LinkId=394414).
 
-AAD Graph plugin for Apache Cordova is an open source library.  For distribution options, source code, and contributions, check out the AAD Graph Cordova repo at https://github.com/AzureAD/azure-activedirectory-cordova-plugin-graph.
+AAD Graph plugin for Apache Cordova is an open source library.  For distribution options, source code, and contributions, check out the AAD Graph Cordova repo at https://github.com/Azure-Samples/active-directory-cordova-graphapi.
 
 ## About The Sample
 If you would like to get started immediately, skip this section and jump to How To Run The Sample.
