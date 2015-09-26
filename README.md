@@ -65,7 +65,7 @@ Platform specific development tools depending on platform(s) you want to run sam
 
 ### Step 1: Register the sample with your Azure Active Directory tenant
 
-To use this sample you will need a Microsoft Azure Active Directory Tenant. If you're not sure what a tenant is or how you would get one, read [What is a Windows Azure AD tenant](http://technet.microsoft.com/library/jj573650.aspx)? or [Sign up for Windows Azure as an organization](http://www.windowsazure.com/en-us/manage/services/identity/organizational-account/). These docs should get you started on your way to using Windows Azure AD.
+To use this sample you will need a Microsoft Azure Active Directory Tenant. If you're not sure what a tenant is or how you would get one, read [What is a Azure AD tenant](http://technet.microsoft.com/library/jj573650.aspx)? or [Sign up for Azure as an organization](http://www.windowsazure.com/en-us/manage/services/identity/organizational-account/). These docs should get you started on your way to using Azure AD.
 
 1. Sign in to the Azure management portal.
 2. Click on Active Directory in the left hand nav.
@@ -77,7 +77,7 @@ To use this sample you will need a Microsoft Azure Active Directory Tenant. If y
 8. Enter a Redirect Uri value of your choosing and of form http://AADGraphClient. NOTE: there are certain platform specific features that can only be leveraged by using Redirect Uri values in specific formats. We will add guidance about this soon. 
 9. While still in the Azure portal, click the Configure tab of your application.
 10. Find the Client ID value and copy it aside, you will need this later when configuring your application.
-11. In the Permissions to Other Applications configuration section, ensure that "Access your organization's directory" and "Enable sign-on and read user's profiles" are selected under "Delegated permissions" for Windows Azure Active Directory. Save the configuration.
+11. In the Permissions to Other Applications configuration section, ensure that "Access your organization's directory" and "Enable sign-on and read user's profiles" are selected under "Delegated permissions" for Azure Active Directory. Save the configuration.
 
 ### Step 2:  Clone or download this repository
 
