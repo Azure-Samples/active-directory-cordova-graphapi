@@ -82,7 +82,7 @@ To use this sample you will need a Microsoft Azure Active Directory Tenant. If y
 ### Step 2:  Clone or download this repository
 
 From your shell or command line:
-`git clone https://github.com/AzureADSamples/NativeClient-GraphAPI-Cordova.git`
+`git clone https://github.com/Azure-Samples/active-directory-cordova-graphapi.git`
 
 ### Step 3:  Clone or download AAD Graph for Apache Cordova plugin
 
