@@ -1,7 +1,7 @@
 ---
 services: active-directory
-platforms: ios, android
-author: dstrockis
+platforms: javascript
+author: vibronet
 ---
 
 # Calling the Graph API in an Apache Cordova app
