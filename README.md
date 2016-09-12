@@ -67,17 +67,14 @@ Platform specific development tools depending on platform(s) you want to run sam
 
 To use this sample you will need a Microsoft Azure Active Directory Tenant. If you're not sure what a tenant is or how you would get one, read [What is a Azure AD tenant](http://technet.microsoft.com/library/jj573650.aspx)? or [Sign up for Azure as an organization](http://www.windowsazure.com/en-us/manage/services/identity/organizational-account/). These docs should get you started on your way to using Azure AD.
 
-1. Sign in to the Azure management portal.
-2. Click on Active Directory in the left hand nav.
-3. Click the directory tenant where you wish to register the sample application.
-4. Click the Applications tab.
-5. In the drawer, click Add.
-6. Click "Add an application my organization is developing".
-7. Enter a friendly name for the application, for example "AADGraphClient", select "Native Client Application", and click next.
-8. Enter a Redirect Uri value of your choosing and of form http://AADGraphClient. NOTE: there are certain platform specific features that can only be leveraged by using Redirect Uri values in specific formats. We will add guidance about this soon. 
-9. While still in the Azure portal, click the Configure tab of your application.
-10. Find the Client ID value and copy it aside, you will need this later when configuring your application.
-11. In the Permissions to Other Applications configuration section, ensure that "Access your organization's directory" and "Enable sign-on and read user's profiles" are selected under "Delegated permissions" for Azure Active Directory. Save the configuration.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. On the top bar, click on your account and under the **Directory** list, choose the Active Directory tenant where you wish to register your application.
+2. Click on **More Services** in the left hand nav, and choose **Azure Active Directory**.
+3. Click on **Registered Applications** and choose **Add**.
+4. Enter a friendly name for the application, for example 'AADGraphClient' and select 'Native' as the Application Type. For the redirect URI, enter something like `http://AADGraphClient`. Click on **Create** to create the application. NOTE: there are certain platform specific features that can only be leveraged by using Redirect Uri values in specific formats. We will add guidance about this soon. 
+5. While still in the Azure portal, choose your application, click on **Settings** and choose **Properties**.
+6. Find the Application ID value and copy it to the clipboard.
+7. Configure Permissions for your application - in the Settings menu, choose the 'Required permissions' section, click on **Add**, then **Select an API**, and select 'Microsoft Graph' (this is the Graph API). Then, click on  **Select Permissions** and select 'Read Directory Data' and 'Sign in and read user profile'.
 
 ### Step 2:  Clone or download this repository
 
@@ -121,7 +118,7 @@ You can workaround this issue by using patched cordova-windows with MSBuild reve
  1. Open the `app.js` file inside created `AADGraphSample/www/js/` folder.
  2. Find the `tenantName` variable and replace its value with the Tenant (Azure Active Directory) name from the Azure portal.
  3. Find the `authority` variable and replace its value' part after `https://login.windows.net/` with the Tenant (Azure Active Directory) name from the Azure portal.
- 3. Find the `appId` variable and replace its value with the Client Id assigned to your app from the Azure portal.
+ 3. Find the `appId` variable and replace its value with the Application Id assigned to your app from the Azure portal.
  4. Find the `redirectUrl` variable and replace the value with the redirect Uri you registerd in the Azure portal.
 
 ```javascript
