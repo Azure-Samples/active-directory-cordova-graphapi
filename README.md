@@ -117,13 +117,13 @@ You can workaround this issue by using patched cordova-windows with MSBuild reve
 ### Step 7:  Configure the sample to use your Azure Active Directory tenant
  1. Open the `app.js` file inside created `AADGraphSample/www/js/` folder.
  2. Find the `tenantName` variable and replace its value with the Tenant (Azure Active Directory) name from the Azure portal.
- 3. Find the `authority` variable and replace its value' part after `https://login.windows.net/` with the Tenant (Azure Active Directory) name from the Azure portal.
+ 3. Find the `authority` variable and replace its value' part after `https://login.microsoftonline.com/` with the Tenant (Azure Active Directory) name from the Azure portal.
  3. Find the `appId` variable and replace its value with the Application Id assigned to your app from the Azure portal.
  4. Find the `redirectUrl` variable and replace the value with the redirect Uri you registerd in the Azure portal.
 
 ```javascript
     .value('tenantName', 'testlaboratory.onmicrosoft.com')
-    .value('authority', 'https://login.windows.net/testlaboratory.onmicrosoft.com/')
+    .value('authority', 'https://login.microsoftonline.com/testlaboratory.onmicrosoft.com/')
     .value('resourceUrl', 'https://graph.windows.net/')
     .value('appId', '3cfa20df-bca4-4131-ab92-626fb800ebb5')
     .value('redirectUrl', 'http://test.com');

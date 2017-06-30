@@ -42,7 +42,7 @@
       })
 
     .value('tenantName', 'testlaboratory.onmicrosoft.com')
-    .value('authority', 'https://login.windows.net/testlaboratory.onmicrosoft.com/')
+    .value('authority', 'https://login.microsoftonline.com/testlaboratory.onmicrosoft.com/')
     .value('resourceUrl', 'https://graph.windows.net/')
     .value('appId', '3cfa20df-bca4-4131-ab92-626fb800ebb5')
     .value('redirectUrl', 'http://test.com');
