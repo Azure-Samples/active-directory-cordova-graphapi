@@ -1,7 +1,7 @@
 ---
 services: active-directory
 platforms: javascript
-author: vibronet
+author: jomatthi
 ---
 
 # Calling the Graph API in an Apache Cordova app
