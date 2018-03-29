@@ -4,14 +4,16 @@
 (function () {
     'use strict';
 
-    var elemsClickCount = {};    
+    var elemsClickCount = {};
 
     angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngMessages'])
       .run(function ($ionicPlatform) {
           $ionicPlatform.ready(function () {
               // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
               // for form inputs)
-              if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+              if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard &&
+                      window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar) {
+
                   cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
               }
 
